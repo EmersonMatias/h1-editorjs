@@ -18,3 +18,45 @@ export type IH1 = {
     api?: API,
     config?: undefined
 }
+
+declare class H1{
+    public data: IData
+    public H1: HTMLHeadElement
+    public settings: ISetting[]
+
+    static get toolbox() {
+        return toolBox
+    }
+
+    constructor({ data, readOnly }: IH1)
+
+    public render(): HTMLHeadElement;
+
+    validate(savedData: IData):  boolean
+
+    save(blockContent: HTMLDivElement): IData
+
+    renderSettings(): {
+        icon: string;
+        label: string;
+        onActivate: () => void;
+    }[]
+
+    _colorSetting(colorSelected: string): void;
+
+    _textAlignSetting(alignSelected: string): void
+
+    _hasData(data: IData): void
+
+    _hasDataText(): void
+
+    /* 
+       static get enableLineBreaks() {
+        return true;
+    }
+    */
+
+    static get isReadOnlySupported(): boolean
+}
+
+export default H1

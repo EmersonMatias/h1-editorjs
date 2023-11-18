@@ -1,6 +1,6 @@
 {
   "name": "h1-editorjs",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "types": "./types/index.d.ts",
   "type": "module",
   "main": "./dist/index.umd.cjs",
@@ -37,10 +37,12 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
+      "require": "./dist/index.umd.cjs",
+      "types": "./types/index.d.ts"
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "types"
   ]
 }

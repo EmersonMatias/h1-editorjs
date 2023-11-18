@@ -3,11 +3,12 @@ import "./index.css"
 import Settings from "./settings"
 import { IData, IH1, ISetting } from "../types"
 import { addClassName, contentEditable, createElement, removeClassName } from "./utils"
+import A from "../types"
 
-export default class H1 {
-    private data: IData
-    private H1: HTMLHeadElement
-    private settings: ISetting[]
+export default class H1 implements A {
+    public data: IData
+    public H1: HTMLHeadElement
+    public settings: ISetting[]
 
     static get toolbox() {
         return toolBox
@@ -20,7 +21,7 @@ export default class H1 {
         this.H1 = createElement("h1") //Criando elemento H1
         this.H1.innerText = this.data.text
         contentEditable(this.H1, `${!readOnly}`)
-        
+
         if (data) {
             this._hasData(data)
         }
@@ -107,7 +108,7 @@ export default class H1 {
         return true;
     }
     */
-
+   
     static get isReadOnlySupported() {
         return true;
     }
