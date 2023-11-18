@@ -1,8 +1,9 @@
 {
   "name": "h1-editorjs",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -14,5 +15,30 @@
   },
   "dependencies": {
     "@editorjs/editorjs": "^2.28.2"
-  }
+  },
+  "keywords": [
+    "h1",
+    "tool",
+    "editor.js",
+    "editorjs"
+  ],
+  "author": {
+    "name": "Emerson Matias",
+    "email": "emersonsmatthias@gmail.com"
+  },
+  "license": "MIT",
+  "description": "H1 Tool for Editor.js",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/EmersonMatias/h1-editorjs"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ]
 }
