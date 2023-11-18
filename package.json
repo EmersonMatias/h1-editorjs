@@ -1,6 +1,6 @@
 {
   "name": "h1-editorjs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "types": "./types/index.d.ts",
   "type": "module",
   "main": "./dist/index.umd.cjs",
