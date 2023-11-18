@@ -1,0 +1,50 @@
+h1{
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.pink{
+    color: pink;
+}
+
+.black{
+    color: black;
+}
+
+.orange{
+    color: orange;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.purple{
+    color: purple;
+}
+
+.green{
+    color: green;
+}
