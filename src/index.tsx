@@ -1,7 +1,7 @@
 import { InitialData, toolBox } from "./constants"
 import "./index.css"
 import Settings from "./settings"
-import { IData, IH1, ISetting } from "./types"
+import { IData, IH1, ISetting } from "../types"
 import { addClassName, contentEditable, createElement, removeClassName } from "./utils"
 
 export default class H1 {
